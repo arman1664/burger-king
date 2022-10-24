@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .background{
+            /* opacity: .8; */
+            /* background-image: url(topback.png);  */
+            background-image: linear-gradient(rgb(245, 220, 110), rgb(174, 134, 2));
+        }
+        #head1{
+            display:flex ;
+            justify-content: space-between;
+        }
+        .logo{
+            margin: .5vw;
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
+            width: 15vw;
+        }
+        .tollid{
+            color: #3d2514;
+            padding: 0px 50px;
+            list-style: none;
+            font-size: 1vw;
+            /* width: 40vw; */
+            float: right;
+        }
+
+        
+        #head2{
+            overflow: hidden;
+            padding: 2px;
+
+        }
+
+
+        .menu-items{
+            margin: .2vw;
+        }
+
+
+        #menu-id{
+            color: #3d2514;
+            font-size: 1.5vw;
+            margin: 1vw;
+            padding: 0px 5px;
+            text-decoration: none;
+        }
+
+        #menu-id:hover{
+            background-color: #ce834e;
+            color: rgb(0, 0, 0);
+            border-radius: 60px;
+        }
+
+        #head3{
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            overflow: hidden;
+        }
+
+        .dotted-border{
+            border: 2px brown dashed;
+            text-align: center;
+            justify-content: center;
+            /* margin: 2px 90px; */
+            font-size: 2vw;
+            padding: 3px;
+            width: 20vw;
+            margin-left: 50px;
+        }
+        
+        #heading{
+            border: 2px rgb(126, 106, 5) solid ;
+            box-shadow: 13px 13px;
+            border-radius: 5px ;
+            font-size: 6vw;
+            text-align: center;
+            margin: 10px 30px;
+            /* margin: 40px; */
+            width: 35vw;
+            margin-bottom: 20px;
+        }
+
+        .banner{
+            margin-right: 20px;
+            width: 30vw;
+            margin-bottom: 20px;
+
+        }
+
+        #body1{
+            width: 50vw;
+            width: 80%;
+            margin: auto;
+            margin-top: 15px;
+
+        }
+        .img-containeer{
+            display: flex;
+
+        }
+
+        .pic1 img:hover{
+            opacity: .7;
+            width: 39vw;
+        }
+
+        .pic2 img:hover{
+            width: 41vw;
+            opacity: .7;
+        }
+
+        .pic1 img{
+            margin: auto;
+            overflow: hidden;   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 95%;
+        }        
+        .pic2 img{
+            overflow: hidden;
+            margin: auto;
+            width: 95%;
+            margin-top: .5%;
+            padding: .1vw .9vw;   
+        }
+        .tasty{
+            margin: 20px;
+        }
+
+        #tasty-text{
+            background-color: yellow;
+            text-align: center;
+            margin: auto;
+            width: 30vw;
+            padding: 4px;
+            font-size: 2vw;
+            border: .5px black solid;
+        }
+
+
+        #enjoy-text{
+            text-align: center;
+            /* background-color: #ce834e; */
+            font-size: 5vw;
+        }
+
+        
+        @media screen and (max-width: 440px ) {
+          
+            #head2{
+                /* padding: .5px; */
+            }
+
+            .logo{
+            margin: .5vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img{
+            width: 15vw;
+        }
+
+        .toolfree{
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+        .tollid{
+            color: #3d2514;
+            list-style: none;
+            padding-left: 50px;
+            font-size: 1vw;
+
+        }
+
+        #menu-id{
+            color: #3d2514;
+            font-size: 3vw;
+            margin: 0px 3px;
+            padding:  2px 5px;
+            text-decoration: none;
+        }
+
+        .dotted-border{
+            border: 2px brown dashed;
+            text-align: center;
+            /* justify-content: center; */
+            padding: 3px;
+            font-size: 2vw;
+            width: 30vw;
+            margin-left: 30px;
+        }
+
+        h5{
+            font-size: 2vw;
+        }
+
+        #heading{
+            border: 2px rgb(126, 106, 5) solid ;
+            box-shadow: 13px 13px;
+            border-radius: 5px ;
+            font-size: 5vw;
+            text-align: center;
+            margin: 10px 20px;
+            /* margin: 40px; */
+            width: 35vw;
+            margin-bottom: 20px;
+        }
+
+        .background{
+            overflow: hidden;
+        }
+         
+        #tasty-text{
+            font-size: 10px;
+        }
+
+        #tasty-text{
+            font-size: 8px;
+            padding: 2px;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <section id="head1">
+            <div class="logo">
+                <img src="logo1.png" alt="">
+                <li class="tollid">Toll free - +91 6200947002</li>
+
+            </div>
+            <!-- <div class="toolfree"> -->
+            <!-- </div> -->
+        </section>
+
+        <section id="head2">
+            <div class="menu-items">
+                <a id="menu-id" class="onn" href="#">HOME</a>
+                <a id="menu-id" href="#">MENU</a>
+                <a id="menu-id" href="#">OUR STORY</a>
+                <a id="menu-id" href="#">CONTACT US</a>
+            </div>
+        </section>
+
+        <section id="head3">
+            <div class="text">
+                <div class="dotted-border">
+                <h5>
+                    ULITMATE OFFERS
+                </h5>
+                </div>
+                <p id="heading">BURGER <br> Week
+                </p>
+            </div>
+            <div >
+                <img class="banner" src="banner.png" alt="">
+            </div>
+        </section>
+
+        <!-- header complete -->
+
+
+        
+    </div>
+
+        <!-- body suru -->
+
+
+    <section id="body1">
+
+        <div class="img-containeer">
+        <div class="pic1">
+            <a href="">
+                <img src="sec2-pic1.png" alt="">
+            </a>
+        </div>
+
+        <div class="pic2">
+            <div>
+                <a href="#">
+                    <img class="photo1" src="sec2-pic2.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="sec2-pic3.png" alt="">
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="tasty">
+            <p id="tasty-text">
+                ALWAYS TASTY BURGER HERE
+            </p>
+        </div>
+
+        <div class="enjoy">
+            <p id="enjoy-text">CHOOSE &nbsp; & &nbsp; ENJOY</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, optio?</p>
+        </div>
+    </section>
+
+</body>
+</html>
